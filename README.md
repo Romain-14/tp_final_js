@@ -1,4 +1,4 @@
-# TP FINAL FSJS 24
+# TP FINAL JS 24
 
 - Basé sur l'exercice Fish and Chips vu dans le module HTML/CSS, créer et injecter entièrement la section `Today's Special` en JS
 
