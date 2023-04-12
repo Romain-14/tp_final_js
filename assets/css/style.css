@@ -72,49 +72,52 @@ main {
 
 /* SECTION */
 
-main section:nth-child(1) {
+section:nth-child(1) {
     width: 100%;   
     padding: 0 25%;
     text-align: center;
     line-height: 25px;
 }
 
-main section:nth-child(2){
-    display: none;
+section:nth-child(2){
+    /* display: none; */
+    display: flex;
     width: calc(75% - 15px);
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--primary-color);
 }
 /*  */
-main section:nth-child(2) h2, main section:nth-child(2) h3 {
+section:nth-child(2) h2, section:nth-child(2) h3 {
     text-align: center;
     width: 100%;
 }
 
-main section:nth-child(2) h2 {
+section:nth-child(2) h2 {
     padding-top: 40px;
+    margin-bottom: 20px;
 }
 
-main section:nth-child(2) h3 {
+section:nth-child(2) h3 {
     padding-bottom: 10px;
 }
 
-main section:nth-child(2) img{
+section:nth-child(2) img{
     float: left;
     width: 90px;
     border-radius: 50%;
     margin: 5px 10px 0 0;
 }
-main section:nth-child(2) img + p{
+
+section:nth-child(2) img + p{
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-main section:nth-child(2) article {
+section:nth-child(2) article {
     width: 50%;
     padding: 4%;
-    min-height: 750px;
+    min-height: 550px;
 }
 
 .secondary-color {
@@ -127,7 +130,7 @@ main section:nth-child(2) article {
 
 /* CallToAction "read-more" */
 
-main section:nth-child(2) a {
+section:nth-child(2) a {
     float: right;
     padding: 8px 12px;
     background-color: var(--secondary-color);
@@ -136,7 +139,9 @@ main section:nth-child(2) a {
 /* ASIDE */
 
 aside {
-    display: inline-block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 25%;
     padding: 35px 15px;
     border: var(--tertiary-color) 3px solid;
@@ -146,7 +151,9 @@ aside {
 }
 
 aside img {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: -65px;
 }
 
